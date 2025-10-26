@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: $card-color;
   padding: 0 50px;
   box-sizing: border-box;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -30,22 +30,24 @@
     line-height: 60px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #060b35;
+    color: $text-color;
     position: relative;
     transition: color 0.3s;
-  }
-}
 
-.header__nav-item:not(:last-child) {
+    &:hover {
+  color: $hover-color;
+}
+  }
+
+  &__nav-item:not(:last-child) {
   margin-right: 20px;
 }
 
-.header__nav-link.is-active {
+  &__nav-link.is-active {
   color: $hover-color;
   position: relative;
-}
 
-.header__nav-link.is-active::after {
+  &::after {
   content: '';
   position: absolute;
   left: 0;
@@ -55,7 +57,6 @@
   background: $hover-color;
   border-radius: 8px;
 }
-
-.header__nav-link:hover {
-  color: $hover-color;
 }
+}
+
