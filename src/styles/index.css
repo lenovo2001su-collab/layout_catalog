@@ -46,7 +46,7 @@
 }
 
 .header__nav-link.is-active::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   right: 0;
@@ -69,6 +69,8 @@
   flex-direction: column;
   align-items: center;
   padding: 32px 16px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
 }
 
 .card:hover {
@@ -167,7 +169,9 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 .card__buy {
@@ -206,7 +210,7 @@
   margin-right: 0;
 }
 
-.stars--4 .stars__star:nth-child(-n+4) {
+.stars--4 .stars__star:nth-child(-n + 4) {
   background-image: url(../images/star-active.svg);
 }
 
@@ -217,7 +221,6 @@
   gap: 48px 46px;
   justify-content: center;
   place-items: center;
-
 }
 
 @media (min-width: 488px) {
